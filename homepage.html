@@ -7,27 +7,28 @@
     <title>Yunheng Li | Home</title>
     <style>
         body {
-    font-family: 'Roboto', sans-serif; /* Sleek, modern font */
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1d; /* Dark background */
-    color: #eaeaea; /* Light text */
+    background-color: #f5f5f5;
+    color: #333;
+    transition: all 0.3s ease-in-out; /* Transition for smooth background color changes */
 }
 
 header {
-    background-color: #0d0d0d; /* Darker header */
-    color: #00ffff; /* Neon cyan text */
+    background-color: #ffffff;
+    color: #333;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glow effect */
+    border-bottom: 2px solid #e0e0e0;
+    transition: all 0.3s ease-in-out; /* Smooth header transitions */
 }
 
 header h1 {
     font-size: 2.5rem;
     margin: 0;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -39,36 +40,48 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #00ffff; /* Neon cyan */
+    color: #333;
     text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, color 0.3s ease; /* Smooth color and border transitions */
 }
 
 nav ul li a:hover {
-    color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #00ffff;
+    border-bottom: 2px solid #007BFF;
+    color: #007BFF; /* Link color transition on hover */
 }
 
 section {
     padding: 40px;
-    background-color: #0d0d0d;
+    background-color: #ffffff;
     margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3); /* Neon glow around sections */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transform: translateY(20px); /* Initial hidden state */
+    animation: fadeIn 0.6s ease-in-out forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Transition into view */
+    }
 }
 
 h2 {
-    color: #00ffff;
-    font-size: 2rem;
-    border-bottom: 2px solid #00ffff;
+    color: #007BFF;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px #00ffff;
+    transition: color 0.3s ease; /* Transition for text color */
 }
 
 p, ul {
@@ -77,15 +90,14 @@ p, ul {
 }
 
 footer {
-    background-color: #0d0d0d;
-    color: #00ffff;
+    background-color: #ffffff;
+    color: #333;
     text-align: center;
-    padding: 10px;
-    font-size: 0.8rem;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glow effect */
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 40px;
+    transition: all 0.3s ease; /* Smooth footer transitions */
 }
 
 footer p {
@@ -93,58 +105,57 @@ footer p {
 }
 
 footer a {
-    color: #00ffff;
+    color: #007BFF;
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth link transition */
 }
 
 footer a:hover {
-    color: #fff;
-    text-shadow: 0 0 10px #fff, 0 0 20px #00ffff;
+    text-decoration: underline;
+    color: #0056b3; /* Subtle color change on hover */
 }
 
-/* Glowing buttons */
+/* Smooth hover effects for buttons */
 button, .btn {
-    background-color: #0d0d0d;
-    color: #00ffff;
-    border: 2px solid #00ffff;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 8px;
-    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth background and scaling transition */
 }
 
 button:hover, .btn:hover {
-    background-color: #00ffff;
-    color: #0d0d0d;
-    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
-/* Add a futuristic border around images */
+/* Smooth hover effect for images */
 img {
-    border: 2px solid #00ffff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-    transition: box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover zoom and shadow */
 }
 
 img:hover {
-    box-shadow: 0 0 40px rgba(0, 255, 255, 1);
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
 }
 
-/* Add glowing neon borders on hover */
+/* Smooth transition for links */
 a {
-    color: #00ffff;
+    color: #007BFF;
     text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease;
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
 
 a:hover {
-    border-bottom: 2px solid #00ffff;
+    color: #0056b3; /* Subtle color transition */
 }
-    </style>
+</style>
+
 </head>
 <body>
     <header>
@@ -152,7 +163,7 @@ a:hover {
         <p>Manufacturing Engineering Student | Motorsport Enthusiast</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="homepage.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="skills.html">Skills</a></li>
@@ -168,6 +179,13 @@ a:hover {
     </section>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
