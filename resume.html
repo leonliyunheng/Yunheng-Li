@@ -5,47 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yunheng Li | Resume</title>
     <style>
-        <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: all 0.3s ease-in-out; /* Transition for smooth background color changes */
+}
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    transition: all 0.3s ease-in-out; /* Smooth header transitions */
+}
 
-        header h1 {
-            margin: 0;
-        }
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, color 0.3s ease; /* Smooth color and border transitions */
+}
 
-        section {
-            padding: 20px;
-            background-color: white;
-            margin: 20px;
-            border-radius: 10px;
-        }
-    </style>
+nav ul li a:hover {
+    border-bottom: 2px solid #007BFF;
+    color: #007BFF; /* Link color transition on hover */
+}
+
+section {
+    padding: 40px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transform: translateY(20px); /* Initial hidden state */
+    animation: fadeIn 0.6s ease-in-out forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Transition into view */
+    }
+}
+
+h2 {
+    color: #007BFF;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease; /* Transition for text color */
+}
+
+p, ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 40px;
+    transition: all 0.3s ease; /* Smooth footer transitions */
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth link transition */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Subtle color change on hover */
+}
+
+/* Smooth hover effects for buttons */
+button, .btn {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth background and scaling transition */
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Smooth hover effect for images */
+img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover zoom and shadow */
+}
+
+img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+}
+
+/* Smooth transition for links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+a:hover {
+    color: #0056b3; /* Subtle color transition */
+}
+
     </style>
 </head>
 <body>
@@ -54,7 +162,7 @@
         <p>Manufacturing Engineering Student | Motorsport Enthusiast</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="homepage.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="skills.html">Skills</a></li>
