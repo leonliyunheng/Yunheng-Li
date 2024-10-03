@@ -7,44 +7,143 @@
     <title>Yunheng Li | Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+    font-family: 'Roboto', sans-serif; /* Sleek, modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1d; /* Dark background */
+    color: #eaeaea; /* Light text */
+}
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
+header {
+    background-color: #0d0d0d; /* Darker header */
+    color: #00ffff; /* Neon cyan text */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glow effect */
+}
 
-        header h1 {
-            margin: 0;
-        }
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
 
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
+nav ul li a {
+    color: #00ffff; /* Neon cyan */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
 
-        section {
-            padding: 20px;
-            background-color: white;
-            margin: 20px;
-            border-radius: 10px;
-        }
+nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #00ffff;
+}
+
+section {
+    padding: 40px;
+    background-color: #0d0d0d;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3); /* Neon glow around sections */
+}
+
+h2 {
+    color: #00ffff;
+    font-size: 2rem;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+p, ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #0d0d0d;
+    color: #00ffff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8rem;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glow effect */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #00ffff;
+}
+
+/* Glowing buttons */
+button, .btn {
+    background-color: #0d0d0d;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+button:hover, .btn:hover {
+    background-color: #00ffff;
+    color: #0d0d0d;
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+}
+
+/* Add a futuristic border around images */
+img {
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+img:hover {
+    box-shadow: 0 0 40px rgba(0, 255, 255, 1);
+}
+
+/* Add glowing neon borders on hover */
+a {
+    color: #00ffff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+a:hover {
+    border-bottom: 2px solid #00ffff;
+}
     </style>
 </head>
 <body>
