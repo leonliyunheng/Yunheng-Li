@@ -43,19 +43,21 @@ nav ul li a:hover {
 /* Intro Section */
 .intro-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack text and image vertically */
+    justify-content: center;
     align-items: center;
     max-width: 1200px;
-    margin: 150px auto 0; /* Margin adjusted for spacing below the fixed header */
+    margin: 150px auto 0;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+    text-align: center; /* Align text and image in the center */
 }
 
 .intro-text {
-    max-width: 60%; /* Adjusts dynamically */
+    max-width: 100%;
+    margin-bottom: 30px;
 }
 
 .intro-text h1 {
@@ -75,6 +77,7 @@ nav ul li a:hover {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .intro-text ul.skills li {
@@ -84,18 +87,52 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.contact-icons {
+/* Aligning Resume Button and Icons Horizontally */
+.contact-section {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Space between icons and button */
     margin-top: 20px;
 }
 
+/* Styling for the Resume Button */
+.resume-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding */
+    background-color: #1a2d49; /* Dark blue background */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adds shadow for 3D effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+    height: 50px; /* Ensure same height as icons */
+    line-height: 50px;
+}
+
+.resume-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the Icons */
+.contact-section a img {
+    height: 50px; /* Same height as Resume button */
+    width: 50px;
+    border-radius: 10px;
+}
+
+/* Image */
 .intro-image img {
     border-radius: 10px;
-    max-width: 35%; /* Scales down with flexbox */
-    height: auto; /* Keeps aspect ratio */
+    max-width: 50%; /* Make the image take up 50% of the container */
+    height: auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-left: 20px; /* Adds space between the text and image */
+    margin-top: 30px; /* Adds space between the text and image */
 }
 
 /* Footer */
@@ -107,84 +144,6 @@ footer {
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Center the button on the page */
-
-/* Centering the icons and button horizontally */
-.contact-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px; /* Space between icons */
-    margin: 0 auto;
-}
-
-/* Set same height for icons and resume button */
-.contact-icons a img, .resume-button {
-    height: 50px; /* Set consistent height for all */
-}
-
-/* Styling for the icons */
-.contact-icons a img {
-    height: 50px; /* Set height for the icons */
-    border-radius: 10px;
-}
-
-/* Styling for the Resume button */
-.resume-button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px; /* Adjust horizontal padding */
-    background-color: #1a2d49; /* Dark blue background */
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 10px; /* Rounded corners to match icons */
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adds shadow for 3D effect */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
-    height: 50px; /* Same height as icons */
-    line-height: 50px; /* Vertically align text inside the button */
-}
-
-/* Hover effect for the Resume button */
-.resume-button:hover {
-    transform: translateY(-3px); /* Lift the button slightly on hover */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-}
-
-/* Responsive design for tablets and smaller screens */
-@media (max-width: 768px) {
-    .intro-section {
-        flex-direction: column; /* Stack text and image vertically */
-        text-align: center;
-    }
-
-    .intro-text {
-        max-width: 100%; /* Full width on smaller screens */
-    }
-
-    .intro-image img {
-        max-width: 80%; /* Adjust the image width for smaller screens */
-        margin-left: 0; /* Reset margin */
-        margin-top: 20px; /* Add some spacing from the text */
-    }
-}
-
-/* Responsive design for mobile screens */
-@media (max-width: 480px) {
-    .intro-text h1 {
-        font-size: 2.2rem; /* Smaller heading on mobile */
-    }
-
-    .intro-text p {
-        font-size: 1rem; /* Smaller paragraph text on mobile */
-    }
-
-    .intro-image img {
-        max-width: 100%; /* Full width for the image */
-    }
-}
 
 
 
