@@ -60,7 +60,7 @@ nav ul li a:hover {
 
 
 section {
-    width: 100%; /* Increase width for better readability */
+    width: auto; /* Increase width for better readability */
     padding: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -175,37 +175,29 @@ a:hover {
     color: #0056b3; /* Subtle color transition */
 }
 
-/* Profile Section */
 .profile-section {
-    width: 100%;
+    display: flex; /* Use flexbox for better alignment */
+    align-items: flex-start; /* Align the image and text at the top */
     max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
-    padding: 20px;
+    padding: 10px;
 }
 
 .profile-picture {
-    width: 250px;
-    height: 310px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 0;
-    border-radius: 8px;
+    width: 290px;
+    height: auto; /* Let the height adjust to the aspect ratio */
+    margin-right: 15px; /* Small gap between the picture and text */
+    border-radius: 10px;
 }
 
 .profile-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
+    flex-grow: 1; /* Ensure the text container takes up the remaining space */
+    line-height: 1.6; /* Better readability for text */
 }
 
-/* Scroll-triggered section */
+/* Additional scroll-triggered section styles */
 .scroll-triggered {
-    width: 90%;
     opacity: 0;
-    max-width: 1200px; /* Set a maximum width for larger screens */
-    padding: 20px; /* Add some padding for readability */
-    margin: 0 auto; /* Center the content */
-    box-sizing: border-box; /* Ensure padding doesn’t affect the width */
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
@@ -215,6 +207,63 @@ a:hover {
     transform: translateY(0);
 }
 
+/* Main container for the email icon */
+.email-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    perspective: 800px; /* 3D perspective */
+}
+
+/* Envelope container */
+.envelope {
+    position: relative;
+    width: 120px;
+    height: 80px;
+    transform: rotateX(15deg); /* 3D tilt */
+    transform-style: preserve-3d; /* Allows 3D effects */
+}
+
+/* Envelope top flap */
+.envelope-top {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #007BFF; /* Blue envelope */
+    top: 0;
+    left: 0;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 50% 100%); /* Triangular top flap */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* 3D depth */
+    transform: translateZ(10px); /* Lift the top flap for a 3D effect */
+}
+
+/* Envelope body */
+.envelope-body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0056b3; /* Darker blue body */
+    top: 0;
+    left: 0;
+    border-radius: 5px; /* Slight rounded corners */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Envelope bottom flap */
+.envelope-bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #0056b3; /* Matches the body */
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Bottom triangular flap */
+    transform: translateZ(5px); /* 3D lift for bottom flap */
+    z-index: 1;
+}
 
 
 
