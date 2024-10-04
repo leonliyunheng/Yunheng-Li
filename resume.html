@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yunheng Li | Resume</title>
-        
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Header styling */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out; /* Smooth transition */
+        }
+
+        /* Other styles */
+    </style>
 </head>
 
 <body>
@@ -25,35 +38,29 @@
     </header>
 
     <section>
-        
         <div class="description">
             <h2>Resume</h2>
             Here is my resume, I will keep updating as more experiences I gain.<br>
             <a href="Yunheng_Li_Resume.pdf" download style="text-decoration: underline;">Click here if you wish to download a copy.</a>
         </div>
-
-       
-
-        
-        <div class="resume-content">
-            <br>
-            <br>
-            <h1 style="text-align: center; font-size: 5rem;">Yunheng Li</h1>
-            <p style="text-align: center;">Montreal, QC | +1 438-979-8148 | <a href="mailto:leonliyunheng@gmail.com">leonliyunheng@gmail.com</a> | 
-                <a href="https://leonliyunheng.github.io/Yunheng-Li/homepage.html" target="_blank">Portfolio</a></p>
-            
-            <hr>
-
-            <h1>Education</h1>
-            <hr>
-            <p>University of British Columbia - Vancouver, BC | <em>Bachelor of Applied Science - Manufacturing Engineering</em><br>
-            Expected Graduation: April 2027</p>
-            </ul>
-
-            
-
-            <h1>Skills</h1>
-            <hr>
+        <br>
+        <br>
+    
+        <section class="scroll-triggered">
+            <div class="resume-content">
+                <h1 style="text-align: center; font-size: 5rem;">Yunheng Li</h1>
+                <p style="text-align: center;">Montreal, QC | +1 438-979-8148 | <a href="mailto:leonliyunheng@gmail.com">leonliyunheng@gmail.com</a> | 
+                    <a href="https://leonliyunheng.github.io/Yunheng-Li/homepage.html" target="_blank">Portfolio</a></p>
+    
+                <hr>
+    
+                <h1>Education</h1>
+                <hr>
+                <p>University of British Columbia - Vancouver, BC | <em>Bachelor of Applied Science - Manufacturing Engineering</em><br>
+                Expected Graduation: April 2027</p>
+    
+                <h1>Skills</h1>
+                <hr>
                 <ul>
                     <li>3D printing</li>
                     <li>SolidWorks, Metal Fabrication</li>
@@ -62,73 +69,84 @@
                     <li>Microsoft Office, Visual Studio</li>
                     <li>Basic Circuit tools</li>
                 </ul>
-            
-            
-
-            <h1>Technical Experiences</h1>
-            <hr>
-            <br>
-            <p><b>Assistant Intern - Engineering Department</b></p>
-            <p><em>Zhuhai Chimelong Group Cooperation – Zhuhai, Guangdong<br></em>
-            July 2024 – August 2024</p>
-            <ul>
-                <li>Assisted in analyzing electricity consumption with professional engineers in the marine life support system, contributing to reduced energy usage and costs.</li>
-                <li>Evaluated rust and oxidation issues in the cable car system through meetings, including assessments of the humidity control system at station sites.</li>
-                <li>Managed organization and sorting of technical files, spreadsheets, and reports using Microsoft Excel and Microsoft Word.</li>
-                <br>
-            </ul>
-
-            <p><b>Cardboard Chair</b></p>
-            <p><em>University of British Columbia</em><br>
-            October 2024 – November 2024</p>
-            <ul>
-                <li>Collaborated with a team to design and prototype a foldable cardboard chair.</li>
-                <li>Led the team in using SolidWorks for CAD modeling and design, and oversaw the assembly of the final product.</li>
-                <li>Optimized design for material efficiency, weight reduction, and structural strength, ensuring durability and foldability.</li>
-            <br>
-            </ul>
-
-            <p><b>Arduino Claw</p></b>
-            <p><em>University of British Columbia</em><br>
-            February 2024 – March 2024</p>
-            <ul>
-                <li>Designed and developed a distance-triggered claw mechanism using an ultrasonic sensor and Arduino chips on a breadboard circuit.</li>
-                <li>Led the mechanical, electrical, and control system design, coded with C for the claw’s functionality.</li>
-            <br>
-            </ul>
-
-            <p><b>3D Printed Rotary Engine</b></p>
-            <p><em>Personal Project</em><br>
-            May 2023</p>
-            <ul>
-                <li>Developed a simplified model of Mazda's rotary engine using Ultimaker and Shapr3D, and successfully 3D printed it for use as a decorative prototype.</li>
-            </ul>
-            <br>
-
-
-            <p><b>Founder of Group</b></p>
-            <p><em>Sumo Robot Competition – Sherbrooke, QC</em><br>
-            February 2023 – May 2023</p>
-            <ul>
-                <li>Recruited and led a team of 4 for a campus-wide robot competition.</li>
-                <li>Built robot with Lego and coded with Arduino software.</li>
-                <li>Directed design, assembly, and testing of the robot, securing 1st place in the competition.</li>
-            </ul>
-
-            <h1>Languages</h1>
-            <hr>
-            <ul>
-                <li>English</li>
-                <li>French</li>
-                <li>Chinese</li>
-            </ul>
-        </div>
+    
+                <h1>Technical Experiences</h1>
+                <hr>
+                <p><b>Assistant Intern - Engineering Department</b></p>
+                <p><em>Zhuhai Chimelong Group Cooperation – Zhuhai, Guangdong</em><br> 
+                July 2024 – August 2024</p>
+                <ul>
+                    <li>Assisted in analyzing electricity consumption with professional engineers in the marine life support system, contributing to reduced energy usage and costs.</li>
+                    <li>Evaluated rust and oxidation issues in the cable car system through meetings, including assessments of the humidity control system at station sites.</li>
+                    <li>Managed organization and sorting of technical files, spreadsheets, and reports using Microsoft Excel and Microsoft Word.</li>
+                </ul>
+    
+                <p><b>Cardboard Chair Project</b></p>
+                <p><em>University of British Columbia</em><br>
+                October 2024 – November 2024</p>
+                <ul>
+                    <li>Collaborated with a team to design and prototype a foldable cardboard chair.</li>
+                    <li>Led the team in using SolidWorks for CAD modeling and design, and oversaw the assembly of the final product.</li>
+                    <li>Optimized design for material efficiency, weight reduction, and structural strength, ensuring durability and foldability.</li>
+                </ul>
+    
+                <p><b>Arduino Claw</b></p>
+                <p><em>University of British Columbia</em><br>
+                February 2024 – March 2024</p>
+                <ul>
+                    <li>Designed and developed a distance-triggered claw mechanism using an ultrasonic sensor and Arduino chips on a breadboard circuit.</li>
+                    <li>Led the mechanical, electrical, and control system design, coded with C for the claw’s functionality.</li>
+                </ul>
+    
+                <p><b>3D Printed Rotary Engine</b></p>
+                <p><em>Personal Project</em><br> 
+                May 2023</p>
+                <ul>
+                    <li>Developed a simplified model of Mazda's rotary engine using Ultimaker and Shapr3D, and successfully 3D printed it for use as a decorative prototype.</li>
+                </ul>
+    
+                <p><b>Founder of Group</b></p>
+                <p><em>Sumo Robot Competition – Sherbrooke, QC</em><br>
+                February 2023 – May 2023</p>
+                <ul>
+                    <li>Recruited and led a team of 4 for a campus-wide robot competition.</li>
+                    <li>Built robot with Lego and coded with Arduino software.</li>
+                    <li>Directed design, assembly, and testing of the robot, securing 1st place in the competition.</li>
+                </ul>
+    
+                <h1>Languages</h1>
+                <hr>
+                <ul>
+                    <li>English</li>
+                    <li>French</li>
+                    <li>Chinese</li>
+                </ul>
+            </div>
+        </section>
     </section>
+    
 
     <footer>
         <p>&copy; 2024 Yunheng Li. All Rights Reserved.</p>
     </footer>
 
+    <script>
+        let lastScrollY = window.scrollY; // Track the last scroll position
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY && window.scrollY > 100) {
+                // Scrolling down and scrolled more than 100px, hide the header
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                // Scrolling up, show the header
+                header.style.transform = 'translateY(0)';
+            }
+            lastScrollY = window.scrollY; // Update the last scroll position
+        });
+    </script>
+
 </body>
 </html>
+
 

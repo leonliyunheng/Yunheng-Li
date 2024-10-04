@@ -1,80 +1,103 @@
+/* General Styles */
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif; /* More professional, modern font */
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
     color: #333;
-    transition: all 0.3s ease-in-out;
-    display: float;
-    justify-content: center; /*center horizontally*/
-    align-items: center;
-    min-width: 100vh; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth background and color transitions */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #ffffff;
-    color: #333;
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 2px solid #e0e0e0;
-    transition: all 0.3s ease-in-out; /* Smooth header transitions */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 2.5rem;
+header h1, header p, nav {
     margin: 0;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    text-align: center; /* Center text within the header */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    text-align: center;
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
-    color: #333;
     text-decoration: none;
+    color: #333;
     font-size: 1.1rem;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s ease, color 0.3s ease; /* Smooth color and border transitions */
+    transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
     border-bottom: 2px solid #007BFF;
-    color: #007BFF; /* Link color transition on hover */
+    color: #007BFF;
 }
+
+
+
 
 section {
-    width: 50%;
+    width: 100%; /* Increase width for better readability */
     padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    padding-bottom: 20;
+    padding-top: 200px; /* Adjust this value based on the height of your header */
     background-color: #ffffff;
-    margin: 20px auto;
+    margin: 0 auto;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    opacity: 0;
-    transform: translateY(20px); /* Initial hidden state */
-    animation: fadeIn 0.6s ease-in-out forwards; /* Fade-in animation */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+    opacity: 0; /* Hidden initially for animation */
+    transform: translateY(40px); /* Initial position for scroll animation */
+    animation: fadeInUp 1s ease-in-out forwards; /* Animation for fade-in */
 }
 
-@keyframes fadeIn {
+@keyframes fadeInUp {
     to {
         opacity: 1;
-        transform: translateY(0); /* Transition into view */
+        transform: translateY(0); /* Animate element upwards into view */
     }
+}
+
+/* Scroll-triggered animation */
+section.scroll-triggered {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.scroll-triggered.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h2 {
     color: #007BFF;
-    font-size: 1.8rem;
+    font-size: 2rem; /* Larger font size for more emphasis */
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
     margin-bottom: 20px;
@@ -82,19 +105,19 @@ h2 {
 }
 
 p, ul {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.2rem; /* Slightly larger for readability */
+    line-height: 1.8; /* Increased line-height for better readability */
 }
 
 footer {
     background-color: #ffffff;
     color: #333;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     font-size: 0.9rem;
     border-top: 2px solid #e0e0e0;
     margin-top: 40px;
-    transition: all 0.3s ease; /* Smooth footer transitions */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth footer transitions */
 }
 
 footer p {
@@ -112,7 +135,7 @@ footer a:hover {
     color: #0056b3; /* Subtle color change on hover */
 }
 
-/* Smooth hover effects for buttons */
+/* Buttons */
 button, .btn {
     background-color: #007BFF;
     color: #ffffff;
@@ -129,16 +152,16 @@ button:hover, .btn:hover {
     transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
-/* Smooth hover effect for images */
+/* Image hover effect */
 img {
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover zoom and shadow */
 }
 
 img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
 }
 
 /* Smooth transition for links */
@@ -152,20 +175,47 @@ a:hover {
     color: #0056b3; /* Subtle color transition */
 }
 
+/* Profile Section */
 .profile-section {
-    display: flex; /* Flexbox for side-by-side layout */
-    align-items: center; /* Align image and text vertically */
-    margin: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px;
 }
 
 .profile-picture {
-    width: 150px; /* Adjust size as needed */
-    height: 150px;
-    border-radius: 50%; /* Make it a circle if you want */
-    margin-right: 20px; /* Space between image and text */
+    width: 250px;
+    height: 310px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 0;
+    border-radius: 8px;
 }
 
 .profile-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
+
+/* Scroll-triggered section */
+.scroll-triggered {
+    width: 90%;
+    opacity: 0;
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    padding: 20px; /* Add some padding for readability */
+    margin: 0 auto; /* Center the content */
+    box-sizing: border-box; /* Ensure padding doesn’t affect the width */
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-triggered.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
