@@ -46,15 +46,16 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 100px auto 0;
+    margin: 150px auto 0; /* Margin adjusted for spacing below the fixed header */
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
 }
 
 .intro-text {
-    max-width: 600px;
+    max-width: 60%; /* Adjusts dynamically */
 }
 
 .intro-text h1 {
@@ -91,8 +92,10 @@ nav ul li a:hover {
 
 .intro-image img {
     border-radius: 10px;
-    max-width: 400px;
+    max-width: 35%; /* Scales down with flexbox */
+    height: auto; /* Keeps aspect ratio */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px; /* Adds space between the text and image */
 }
 
 /* Footer */
@@ -105,7 +108,6 @@ footer {
 }
 
 /* Center the button on the page */
-
 
 /* Centering the icons and button horizontally */
 .contact-icons {
@@ -123,7 +125,7 @@ footer {
 
 /* Styling for the icons */
 .contact-icons a img {
-    height: 50px; /* Set width for the icons */
+    height: 50px; /* Set height for the icons */
     border-radius: 10px;
 }
 
@@ -150,6 +152,40 @@ footer {
     transform: translateY(-3px); /* Lift the button slightly on hover */
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
+    }
+
+    .intro-text {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .intro-image img {
+        max-width: 80%; /* Adjust the image width for smaller screens */
+        margin-left: 0; /* Reset margin */
+        margin-top: 20px; /* Add some spacing from the text */
+    }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 480px) {
+    .intro-text h1 {
+        font-size: 2.2rem; /* Smaller heading on mobile */
+    }
+
+    .intro-text p {
+        font-size: 1rem; /* Smaller paragraph text on mobile */
+    }
+
+    .intro-image img {
+        max-width: 100%; /* Full width for the image */
+    }
+}
+
 
 
 
