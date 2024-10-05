@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yunheng Li | About Me</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,7 +24,7 @@
     </header>
 
     
-        <section class="scroll-triggered">
+        
         <h2>About Me</h2>
         <section class="profile-section">
             <img src="images/c026e41862bf0edef178043b186ed82.jpg" alt="Yunheng Li" class="profile-picture">
@@ -42,28 +42,14 @@
                              </p>
             </div>
         </section>
-    </section>
+    
     
 
     <footer>
         <p>&copy; 2024 Yunheng Li. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        let lastScrollY = window.scrollY; // Track the last scroll position
-        const header = document.querySelector('header');
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                // Scrolling down and scrolled more than 100px, hide the header
-                header.style.transform = 'translateY(-100%)';
-            } else {
-                // Scrolling up, show the header
-                header.style.transform = 'translateY(0)';
-            }
-            lastScrollY = window.scrollY; // Update the last scroll position
-        });
-    </script>
+    
 
 </body>
 </html>

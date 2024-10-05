@@ -1,148 +1,209 @@
 /* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
+    background-color: #1a2d49;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: white;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
+    list-style: none;
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
-    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    background-color: #007BFF;
+    border-radius: 5px;
+    color: #fff;
 }
 
 /* Intro Section */
 .intro-section {
-    display: flex;
-    flex-direction: column; /* Stack text and image vertically */
-    justify-content: center;
-    align-items: center;
+    padding: 140px 20px 40px; /* Adds more padding from the top to avoid overlap with header */
     max-width: 1200px;
-    margin: 150px auto 0;
-    padding: 20px;
-    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:fit-content 50%；
+}
+
+
+
+.intro-image img {
+    max-width: 300px;
+    height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Align text and image in the center */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .intro-text {
-    max-width: 100%;
-    margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .intro-text h1 {
-    font-size: 3rem;
-    color: #333;
+    font-size: 3.5rem;
+    color: #1a2d49;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: capitalize; /* Adds a modern title style */
 }
 
 .intro-text p {
     font-size: 1.2rem;
-    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Better alignment of text around image */
 }
 
 .intro-text ul.skills {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 20px 0;
     display: flex;
-    gap: 20px;
+    gap: 15px;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .intro-text ul.skills li {
     background-color: #007BFF;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Aligning Resume Button and Icons Horizontally */
+.intro-text ul.skills li:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Contact Section */
 .contact-section {
     display: flex;
-    justify-content: center;
+    gap: 20px;
     align-items: center;
-    gap: 15px; /* Space between icons and button */
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
-/* Styling for the Resume Button */
-.resume-button {
+.contact-section a {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
-    padding: 10px 20px; /* Adjust padding */
-    background-color: #1a2d49; /* Dark blue background */
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-section img {
+    height: 50px;
+    width: 50px;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Adds shadow for 3D effect */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
-    height: 50px; /* Ensure same height as icons */
-    line-height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.contact-section img:hover {
+    transform: scale(1.1);
+}
+
+.contact-section a:hover {
+    transform: scale(1.05);
+}
+
+/* Resume Button */
+.resume-button {
+    background-color: #1a2d49;
+    color: white;
+    text-decoration: none;
+    
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adds depth to the button */
 }
 
 .resume-button:hover {
+    background-color: #007BFF;
     transform: translateY(-3px);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Styling for the Icons */
-.contact-section a img {
-    height: 50px; /* Same height as Resume button */
-    width: 50px;
-    border-radius: 10px;
-}
-
-/* Image */
-.intro-image img {
-    border-radius: 10px;
-    max-width: 50%; /* Make the image take up 50% of the container */
-    height: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-top: 30px; /* Adds space between the text and image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer */
 footer {
-    background-color: white;
+    background-color: #1a2d49;
+    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     margin-top: 50px;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .intro-section {
+        padding: 100px 20px 20px;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+    }
+
+    .intro-image {
+        float: none; /* Disable float on smaller screens */
+        margin: 0 0 20px 0;
+        max-width: 100%;
+    }
+
+    .intro-text h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+    }
+}
+
+
+
 
 
 
