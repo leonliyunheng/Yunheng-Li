@@ -12,16 +12,14 @@
 
     <main>
         <!-- Home Section -->
-        <section id="home" class="intro-section" style="text-align: center;">
-            
-            <div class="intro-text">
-                <h2 style="font-family: 'Times New Roman', serif; font-size: 7rem; margin-bottom: 15px;">Hello, I'm Yunheng Li</h2>
-                <p>I'm a second-year <strong>Manufacturing Engineering</strong> student at the University of British Columbia with a passion for software and hardware development. Skilled in CNC machining, CAD modeling, and programming, I thrive on solving real-world challenges. My experience includes designing innovative systems and integrating automation technologies like sensors and IoT. Proficient in tools like SolidWorks, C, and JavaScript, I enjoy blending creativity with technical expertise to create impactful solutions in modern manufacturing. Always eager to learn and innovate. </p>
-                <p>Explore my work, skills, and projects below. Feel free to connect using the links provided!</p>
-                
-                
-                <div class="contact-section" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px;">
-                    <h3>My contacts:</h3>
+        <section id="home" class="intro-section" style="text-align: center; padding: 20px;">
+            <div class="intro-text" style="max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-family: 'Times New Roman', serif; font-size: clamp(2.5rem, 5vw, 7rem); margin-bottom: 15px;">Hello, I'm Yunheng Li</h2>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.5rem); line-height: 1.6;">I'm a second-year <strong>Manufacturing Engineering</strong> student at the University of British Columbia with a passion for software and hardware development. Skilled in CNC machining, CAD modeling, and programming, I thrive on solving real-world challenges. My experience includes designing innovative systems and integrating automation technologies like sensors and IoT. Proficient in tools like SolidWorks, C, and JavaScript, I enjoy blending creativity with technical expertise to create impactful solutions in modern manufacturing. Always eager to learn and innovate. </p>
+                <p style="font-size: clamp(1rem, 2vw, 1.2rem);">Explore my work, skills, and projects below. Feel free to connect using the links provided!</p>
+
+                <div class="contact-section" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
+                    <h3 style="font-size: clamp(1rem, 2vw, 1.5rem);">My contacts:</h3>
                     <a href="mailto:leonliyunheng@gmail.com" aria-label="Email Yunheng">
                         <img src="images/emialicon.png" alt="Email Icon" width="40" height="40">
                     </a>
@@ -35,86 +33,65 @@
             </div>
         </section>
 
-      
-
-<!-- Resume Section -->
-<section id="resume" class="resume-section" style="text-align: center; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center;">
-    <!-- Text Description -->
-    <div style="margin-bottom: 20px;">
-        <h2>
-        <p>Resume:</p>
-        </h2>
-    </div>
-    
-    <!-- Embedded PDF -->
-    <div style="width: 100%; max-width: 1200px; overflow: hidden;">
-        <embed src="Resume.pdf" type="application/pdf" width="100%" height="1000px" style="border: 1px solid #ccc;">
-    </div>
-</section>
-
-
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section" style="text-align: center; margin: 0; padding: 20px;">
+            <div style="margin-bottom: 20px;">
+                
+            </div>
+            <div style="width: 100%; max-width: 1200px; overflow: hidden;">
+                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">
+                    Resume:
+                </h2>
+                <embed src="Resume.pdf" type="application/pdf" width="100%" height="1000px" style="border: 1px solid #ccc;">
+            </div>
+        </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="projects-section" style="text-align: center;">
-            
-            <div class="special-header">
-                <h2>Self-Designed Rotary Engine</h2>
-                <p>I designed and modeled my own version of a rotary engine based on extensive research and planning. This project combines my knowledge of metal fabrication, machining, and CAD design.</p>
-                <p>Materials: A356 Aluminum Alloy (engine block), Hard-Anodized Aluminum (6061-T6, eccentric shaft).</p>
-                <p>Research Source: "Rotary Engine" by Kenichi Yamamoto (1981).</p>
+        <section id="projects" class="projects-section" style="text-align: center; padding: 20px;">
+            <div class="special-header" style="max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">Self-Designed Rotary Engine</h2>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">I designed and modeled my own version of a rotary engine based on extensive research and planning. This project combines my knowledge of metal fabrication, machining, and CAD design.</p>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">Materials: A356 Aluminum Alloy (engine block), Hard-Anodized Aluminum (6061-T6, eccentric shaft).</p>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">Research Source: "Rotary Engine" by Kenichi Yamamoto (1981).</p>
             </div>
-            <div class="project" style="margin-top: 20px;">
-                <p>Engine design visualization:</p>
-                <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-                    <img src="images/Rotor snapshot.png" alt="Rotary Engine Twin Rotor Design" width="700" height="500" style="border: 1px solid #ccc; border-radius: 10px;">
-                    <img src="images/Engine snapshot.png" alt="Rotary Engine Assembly Design" width="700" height="500" style="border: 1px solid #ccc; border-radius: 10px;">
+            <div class="project" style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <img src="images/Rotor snapshot.png" alt="Rotary Engine Twin Rotor Design" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+                <img src="images/Engine snapshot.png" alt="Rotary Engine Assembly Design" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section" style="text-align: center; padding: 20px;">
+            <div class="special-header" style="margin-bottom: 20px; max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">Distance-Triggered Ultrasound Sensor Claw</h2>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    Designed an automatic claw that picks up objects based on distance triggered through ultrasound detection and servo motor.
+                    Used Arduino software and a circuit board to complete.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; justify-content: center; max-width: 1400px; margin: 0 auto;">
+                <div>
+                    <img src="images/clawCAD.png" alt="Claw CAD Design" style="width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+                    <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">CAD Design of the Claw</p>
+                </div>
+
+                <div>
+                    <img src="images/clawReal.png" alt="Claw Real-Life Design" style="width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+                    <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">Real-Life Claw Implementation</p>
+                </div>
+
+                <div>
+                    <video controls style="width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+                        <source src="images/trol.mp4" type="video/mp4">
+                        Your browser does not support the video tag. Please download the video <a href="images/trol.mp4">here</a>.
+                    </video>
+                    <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">Video Demonstration</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Projects Section -->
-<section id="projects" class="projects-section" style="text-align: center; padding: 20px;">
-    <!-- Project Header -->
-    <div class="special-header" style="margin-bottom: 20px;">
-        <h2 style="font-size: 2rem; margin-bottom: 10px;">Distance-Triggered Ultrasound Sensor Claw</h2>
-        <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem;">
-            Designed an automatic claw that picks up objects based on distance triggered through ultrasound detection and servo motor. 
-            Used Arduino software and a circuit board to complete.
-        </p>
-    </div>
-
-<!-- Project Media -->
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; justify-content: center; max-width: 1400px; margin: 0 auto;">
-    <!-- CAD Design Image -->
-    <div>
-        <img src="images/clawCAD.png" alt="Claw CAD Design" style="width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
-        <p style="margin-top: 10px; text-align: center;">CAD Design of the Claw</p>
-    </div>
-
-    <!-- Real-Life Implementation Image -->
-    <div>
-        <img src="images/clawReal.png" alt="Claw Real-Life Design" style="width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
-        <p style="margin-top: 10px; text-align: center;">Real-Life Claw Implementation</p>
-    </div>
-
-    <!-- Video Demonstration -->
-    <div>
-        <video controls style="width: 100%; max-width: 400px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
-            <source src="images/trol.mp4" type="video/mp4">
-            Your browser does not support the video tag. Please download the video <a href="images/trol.mp4">here</a>.
-        </video>
-        <p style="margin-top: 10px; text-align: center;">Video Demonstration</p>
-    </div>
-</div>
-
-
-</section>
-
-</main>
-
     <script src="script.js"></script>
 </body>
 
 </html>
-
