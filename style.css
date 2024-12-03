@@ -11,11 +11,12 @@ body {
     color: #e0e0e0; /* Light gray text for readability */
     line-height: 1.6;
     overflow-x: hidden; /* Prevent horizontal scroll issues */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 /* Section Styles */
 section {
-    height: 100vh; /* Each section takes full viewport height */
+    min-height: 100vh; /* Each section takes full viewport height */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -49,12 +50,13 @@ nav ul {
     justify-content: center;
     list-style: none;
     gap: 20px;
+    flex-wrap: wrap; /* Ensure nav items wrap on smaller screens */
 }
 
 nav ul li a {
     color: #87CEFA; /* Light blue */
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem); /* Responsive font size */
     font-weight: 500;
     padding: 10px 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -66,16 +68,17 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* Intro Section */
+/* Intro Section (Homepage) */
 .intro-section {
     background-color: #1a1a1a; /* Slightly lighter than the body */
-    text-align: center;
+    text-align: center; /* Centered text for homepage */
     padding: 20px;
     color: #e0e0e0;
 }
 
-.intro-text h1 {
-    font-size: 3.5rem;
+.intro-text h1,
+.intro-text h2 {
+    font-size: clamp(2rem, 5vw, 4rem); /* Responsive font sizes */
     color: #87CEFA; /* Highlighted light blue */
     margin-bottom: 20px;
     font-weight: 700;
@@ -83,9 +86,10 @@ nav ul li a:hover {
 }
 
 .intro-text p {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsive font size */
     margin-bottom: 20px;
     color: #e0e0e0; /* Light gray text */
+    text-align: center;
 }
 
 .intro-text ul.skills {
@@ -113,40 +117,55 @@ nav ul li a:hover {
 
 /* Resume Section */
 .resume-section {
-    background-color: #121212; /* Match body background */
-    text-align: center;
-    padding: 5px;
+    background-color: #1a1a1a; /* Match body background */
+    text-align: center; /* Centered text for resume section */
+    padding: 20px;
 }
 
 .resume-section h2 {
     color: #87CEFA;
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Responsive font size */
+    margin-bottom: 20px;
 }
 
-embed {
+/* Content alignment fix for embedded PDF */
+.resume-section embed {
+    width: 100%;
+    max-width: 800px; /* Constrain width */
+    height: 600px; /* Reduced height for smaller screens */
+    margin: 0 auto;
+    border: 1px solid #87CEFA;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Projects Section */
 .projects-section {
     background-color: #1a1a1a; /* Slightly lighter for distinction */
-    text-align: center;
-    padding: 100px;
+    text-align: left; /* Left-aligned text for projects */
+    padding: 50px 20px;
 }
 
 .projects-section h2 {
     color: #87CEFA;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Responsive font size */
     margin-bottom: 20px;
+    text-align: left; /* Ensure heading is also left-aligned */
 }
 
-.projects-section img {
+.projects-section p {
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Responsive font size */
+    margin-bottom: 15px;
+    text-align: left; /* Left-aligned text */
+}
+
+.projects-section img,
+.projects-section video {
     width: 100%;
-    max-width: 700px;
-    margin: 20px 0;
+    max-width: 600px; /* Slightly reduced for scaling */
+    margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border: 1px solid #87CEFA; /* Light blue border */
+    display: block;
 }
 
 /* Footer */
@@ -166,19 +185,28 @@ footer p {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
     nav ul {
-        gap: 10px;
+        gap: 10px; /* Adjust navigation gap */
     }
 
-    nav ul li a {
-        padding: 8px 12px;
+    .intro-text ul.skills {
+        gap: 10px; /* Adjust gap for smaller screens */
     }
 
-    .intro-text h1 {
-        font-size: 2.5rem;
+    .projects-section img,
+    .projects-section video {
+        max-width: 100%; /* Full width on smaller screens */
     }
 
-    .projects-section img {
-        width: 100%;
+    .resume-section embed {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+
+    .projects-section {
+        padding: 20px; /* Reduced padding for smaller screens */
     }
 }

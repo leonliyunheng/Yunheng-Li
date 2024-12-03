@@ -38,21 +38,32 @@
             <div style="margin-bottom: 20px;">
                 
             </div>
-            <div style="width: 100%; max-width: 1200px; overflow: hidden;">
+            <div style="width: 100%; max-width: 1200px; height: fit-content; overflow: hidden;">
                 <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">
                     Resume:
                 </h2>
-                <embed src="Resume.pdf" type="application/pdf" width="100%" height="1000px" style="border: 1px solid #ccc;">
+                <embed src="Resume.pdf" type="application/pdf" width="100%" height="10000px" style="border: 1px solid #ccc;">
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="projects-section" style="text-align: center; padding: 20px;">
             <div class="special-header" style="max-width: 1200px; margin: 0 auto;">
-                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">Self-Designed Rotary Engine</h2>
-                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">I designed and modeled my own version of a rotary engine based on extensive research and planning. This project combines my knowledge of metal fabrication, machining, and CAD design.</p>
-                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">Materials: A356 Aluminum Alloy (engine block), Hard-Anodized Aluminum (6061-T6, eccentric shaft).</p>
-                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">Research Source: "Rotary Engine" by Kenichi Yamamoto (1981).</p>
+                
+                
+                
+                
+                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem)">Self-Designed Rotary Engine</h2>
+<p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+    I designed and modeled my own version of a rotary engine based on extensive research and planning. This project combines my knowledge of metal fabrication, machining, and CAD design. 
+</p>
+<p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+    Materials: A356 Aluminum Alloy (engine block), Hard-Anodized Aluminum (6061-T6, eccentric shaft). The design focuses on optimizing thermal efficiency and mechanical durability, considering real-world manufacturing constraints.
+</p>
+<p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+    Research Source: "Rotary Engine" by Kenichi Yamamoto (1981). This project highlights my ability to innovate while solving engineering challenges, demonstrating a balance between theoretical understanding and practical application.
+</p>
+
             </div>
             <div class="project" style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
                 <img src="images/Rotor snapshot.png" alt="Rotary Engine Twin Rotor Design" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
@@ -64,30 +75,36 @@
             <div class="special-header" style="margin-bottom: 20px; max-width: 1200px; margin: 0 auto;">
                 <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">Distance-Triggered Ultrasound Sensor Claw</h2>
                 <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
-                    Designed an automatic claw that picks up objects based on distance triggered through ultrasound detection and servo motor.
-                    Used Arduino software and a circuit board to complete.
+                    Designed an automatic claw that picks up objects based on distance triggered through ultrasound detection and a servo motor. 
+    Used Arduino software and a circuit board to complete. The project emphasizes precision and real-time responsiveness, enabling seamless object detection and retrieval. 
+    The claw was engineered to handle varying object sizes with adjustable grip strength, showcasing adaptability and efficiency in automated systems.
                 </p>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; justify-content: center; max-width: 1400px; margin: 0 auto;">
-                <div>
-                    <img src="images/clawCAD.png" alt="Claw CAD Design" style="width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 600px; margin: 0 auto;">
+                <!-- CAD Design Image -->
+                <div style="width: 100%;">
+                    <img src="images/clawCAD.png" alt="Claw CAD Design" style="width: 100%; height: 300px; object-fit: cover; border: 1px solid #ccc; border-radius: 10px;">
                     <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">CAD Design of the Claw</p>
                 </div>
-
-                <div>
-                    <img src="images/clawReal.png" alt="Claw Real-Life Design" style="width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+            
+                <!-- Real-Life Implementation Image -->
+                <div style="width: 100%;">
+                    <img src="images/clawReal.png" alt="Claw Real-Life Design" style="width: 100%; height: 300px; object-fit: cover; border: 1px solid #ccc; border-radius: 10px;">
                     <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">Real-Life Claw Implementation</p>
                 </div>
-
-                <div>
-                    <video controls style="width: 100%; max-width: 500px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+            
+                <!-- Video Demonstration -->
+                <div style="width: 100%;">
+                    <video controls style="width: 100%; height: 300px; border: 1px solid #ccc; border-radius: 10px;">
                         <source src="images/trol.mp4" type="video/mp4">
                         Your browser does not support the video tag. Please download the video <a href="images/trol.mp4">here</a>.
                     </video>
                     <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">Video Demonstration</p>
                 </div>
             </div>
+            
+            
         </section>
     </main>
 
