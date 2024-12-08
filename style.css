@@ -277,4 +277,16 @@ footer p {
         height: auto;
     }
 }
+
+.project-details-page h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: #87CEFA;
+}
+
+.project-details-page p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.5;
+    text-align: center;
+}
+
 }
