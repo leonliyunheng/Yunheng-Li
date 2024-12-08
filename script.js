@@ -28,3 +28,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Scroll event listener
 window.addEventListener("scroll", handleScroll);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const projectItems = document.querySelectorAll('.project-item');
+
+    projectItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            item.querySelector('img').style.transform = 'scale(1.1)';
+            item.querySelector('.project-title').style.transform = 'translateY(0)';
+            item.querySelector('.project-title').style.opacity = '1';
+        });
+
+        item.addEventListener('mouseleave', () => {
+            item.querySelector('img').style.transform = 'scale(1)';
+            item.querySelector('.project-title').style.transform = 'translateY(100%)';
+            item.querySelector('.project-title').style.opacity = '0';
+        });
+    });
+});

@@ -12,10 +12,10 @@
 
     <main>
         <!-- Home Section -->
-        <section id="home" class="intro-section" style="text-align: center; padding: 20px;">
-            <div class="intro-text" style="max-width: 1200px; margin: 0 auto;">
+        <section id="home" class="intro-section">
+            <div class="intro-text" style="max-width: 1200px; margin: 0 auto; padding: 20px; text-align: center;">
                 <h2 style="font-family: 'Times New Roman', serif; font-size: clamp(2.5rem, 5vw, 7rem); margin-bottom: 15px;">Hello, I'm Yunheng Li</h2>
-                <p style="font-size: clamp(1rem, 2.5vw, 1.5rem); line-height: 1.6;">I'm a second-year <strong>Manufacturing Engineering</strong> student at the University of British Columbia with a passion for software and hardware development. Skilled in CNC machining, CAD modeling, and programming, I thrive on solving real-world challenges. My experience includes designing innovative systems and integrating automation technologies like sensors and IoT. Proficient in tools like SolidWorks, C, and JavaScript, I enjoy blending creativity with technical expertise to create impactful solutions in modern manufacturing. Always eager to learn and innovate. </p>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.5rem); line-height: 1.6;">I'm a second-year <strong>Manufacturing Engineering</strong> student at the University of British Columbia with a passion for software and hardware development. Skilled in CNC machining, CAD modeling, and programming, I thrive on solving real-world challenges. My experience includes designing innovative systems and integrating automation technologies like sensors and IoT. Proficient in tools like SolidWorks, C, and JavaScript, I enjoy blending creativity with technical expertise to create impactful solutions in modern manufacturing. Always eager to learn and innovate.</p>
                 <p style="font-size: clamp(1rem, 2vw, 1.2rem);">Explore my work, skills, and projects below. Feel free to connect using the links provided!</p>
 
                 <div class="contact-section" style="display: flex; justify-content: center; gap: 15px; margin-top: 20px; flex-wrap: wrap;">
@@ -34,36 +34,58 @@
         </section>
 
         <!-- Resume Section -->
-        <section id="resume" class="resume-section" style="text-align: center; margin: 0; padding: 20px;">
+        <section id="resume" class="resume-section" style="text-align: center; padding: 20px;">
             <div style="margin-bottom: 20px;">
-                
+                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">Resume:</h2>
             </div>
             <div style="width: 100%; max-width: 1200px; height: fit-content; overflow: hidden;">
-                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">
-                    Resume:
-                </h2>
                 <embed src="Resume.pdf" type="application/pdf" width="100%" height="10000px" style="border: 1px solid #ccc;">
             </div>
         </section>
 
+        <!-- Project Gallery -->
+<section id="project-gallery" class="projects-section" style="text-align: center; padding: 20px;">
+    <div class="special-header" style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem)">Project Gallery</h2>
+        <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+            Here are some highlights of my projects. Hover over the images to see the project names.
+        </p>
+    </div>
+    <div class="gallery" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px; margin: 0 auto;">
+        <div class="project-item" style="width: 200px; height: 200px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+            <img src="images/Engine snapshot.png" alt="Rotary Engine Assembly Design" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease, filter 0.3s ease; border-radius: 10px;">
+            <div class="project-title" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; text-align: center; transform: translateY(100%); transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0;">Self-Designed Rotary Engine</div>
+        </div>
+        <div class="project-item" style="width: 200px; height: 200px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+            <img src="images/clawCAD.png" alt="Arduino Controlled Claw" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease, filter 0.3s ease; border-radius: 10px;">
+            <div class="project-title" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; text-align: center; transform: translateY(100%); transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0;">Arduino Controlled Claw</div>
+        </div>
+        <div class="project-item" style="width: 200px; height: 200px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+            <img src="images/chari.jpg" alt="Cardboard Chair" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease, filter 0.3s ease; border-radius: 10px;">
+            <div class="project-title" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; text-align: center; transform: translateY(100%); transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0;">Cardboard Chair Design</div>
+        </div>
+        <div class="project-item" style="width: 200px; height: 200px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative;">
+            <img src="images/侧面.png" alt="Adaptive Device for Visually Impaired" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease, filter 0.3s ease; border-radius: 10px;">
+            <div class="project-title" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; text-align: center; transform: translateY(100%); transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0;">Adaptive Device for Visually Impaired</div>
+        </div>
+        <!-- Add more project items as needed -->
+    </div>
+</section>
+
+
         <!-- Projects Section -->
         <section id="projects" class="projects-section" style="text-align: center; padding: 20px;">
             <div class="special-header" style="max-width: 1200px; margin: 0 auto;">
-                
-                
-                
-                
                 <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem)">Self-Designed Rotary Engine</h2>
-<p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
-    I designed and modeled my own version of a rotary engine based on extensive research and planning. This project combines my knowledge of metal fabrication, machining, and CAD design. 
-</p>
-<p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
-    Materials: A356 Aluminum Alloy (engine block), Hard-Anodized Aluminum (6061-T6, eccentric shaft). The design focuses on optimizing thermal efficiency and mechanical durability, considering real-world manufacturing constraints.
-</p>
-<p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
-    Research Source: "Rotary Engine" by Kenichi Yamamoto (1981). This project highlights my ability to innovate while solving engineering challenges, demonstrating a balance between theoretical understanding and practical application.
-</p>
-
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    I designed and modeled my own version of a rotary engine based on extensive research and planning. This project combines my knowledge of metal fabrication, machining, and CAD design.
+                </p>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    Materials: A356 Aluminum Alloy (engine block), Hard-Anodized Aluminum (6061-T6, eccentric shaft). The design focuses on optimizing thermal efficiency and mechanical durability, considering real-world manufacturing constraints.
+                </p>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    Research Source: "Rotary Engine" by Kenichi Yamamoto (1981). This project highlights my ability to innovate while solving engineering challenges, demonstrating a balance between theoretical understanding and practical application.
+                </p>
             </div>
             <div class="project" style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
                 <img src="images/Rotor snapshot.png" alt="Rotary Engine Twin Rotor Design" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
@@ -71,40 +93,54 @@
             </div>
         </section>
 
+        <!-- Arduino Controlled Claw Section -->
         <section id="projects" class="projects-section" style="text-align: center; padding: 20px;">
-            <div class="special-header" style="margin-bottom: 20px; max-width: 1200px; margin: 0 auto;">
-                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem);">Distance-Triggered Ultrasound Sensor Claw</h2>
+            <div class="special-header" style="max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem)">Arduino Controlled Robotic Claw</h2>
                 <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
-                    Designed an automatic claw that picks up objects based on distance triggered through ultrasound detection and a servo motor. 
-    Used Arduino software and a circuit board to complete. The project emphasizes precision and real-time responsiveness, enabling seamless object detection and retrieval. 
-    The claw was engineered to handle varying object sizes with adjustable grip strength, showcasing adaptability and efficiency in automated systems.
+                    Developed an Arduino-based robotic claw for educational purposes. This project integrates sensors for object detection, servos for movement, and an Arduino microcontroller to control the claw's operations.
+                </p>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    Key features include precise control over grip strength, object recognition, and interactive user control via a custom-built interface. The claw can pick up small objects with accuracy, showcasing practical application of embedded systems and robotics.
                 </p>
             </div>
-
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 600px; margin: 0 auto;">
-                <!-- CAD Design Image -->
-                <div style="width: 100%;">
-                    <img src="images/clawCAD.png" alt="Claw CAD Design" style="width: 100%; height: 300px; object-fit: cover; border: 1px solid #ccc; border-radius: 10px;">
-                    <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">CAD Design of the Claw</p>
-                </div>
-            
-                <!-- Real-Life Implementation Image -->
-                <div style="width: 100%;">
-                    <img src="images/clawReal.png" alt="Claw Real-Life Design" style="width: 100%; height: 300px; object-fit: cover; border: 1px solid #ccc; border-radius: 10px;">
-                    <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">Real-Life Claw Implementation</p>
-                </div>
-            
-                <!-- Video Demonstration -->
-                <div style="width: 100%;">
-                    <video controls style="width: 100%; height: 300px; border: 1px solid #ccc; border-radius: 10px;">
-                        <source src="images/trol.mp4" type="video/mp4">
-                        Your browser does not support the video tag. Please download the video <a href="images/trol.mp4">here</a>.
-                    </video>
-                    <p style="margin-top: 10px; text-align: center; font-size: clamp(1rem, 2vw, 1.2rem);">Video Demonstration</p>
-                </div>
+            <div class="project" style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <img src="images/clawCAD.png" alt="Arduino Controlled Claw" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+                <img src="images/clawReal.png" alt="Arduino Controlled Claw" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
             </div>
-            
-            
+        </section>
+
+        <!-- Cardboard Chair Design Section -->
+        <section id="projects" class="projects-section" style="text-align: center; padding: 20px;">
+            <div class="special-header" style="max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem)">Cardboard Chair Design</h2>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    Designed and constructed a functional chair entirely out of cardboard, focusing on sustainability and innovative design. This project explores the potential of common materials in furniture design, emphasizing structural integrity and ergonomic considerations.
+                </p>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    The chair was designed to support weight, showcasing the strength of cardboard when properly engineered. The process involved CAD modeling, prototyping, and iterative testing to achieve a balance between aesthetics and functionality.
+                </p>
+            </div>
+            <div class="project" style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <img src="images/chari.jpg" alt="Cardboard Chair" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+                <img src="images/Weixin Image_20241207043055.jpg" alt="Cardboard Chair" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+            </div>
+        </section>
+
+        <!-- Adaptive Device for Visually Impaired Section -->
+        <section id="projects" class="projects-section" style="text-align: center; padding: 20px;">
+            <div class="special-header" style="max-width: 1200px; margin: 0 auto;">
+                <h2 style="font-size: clamp(1.5rem, 3vw, 2.5rem)">Adaptive Device for Visually Impaired</h2>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    Created an adaptive device to assist visually impaired individuals with daily tasks. This project involved designing a haptic feedback system that uses ultrasonic sensors to detect obstacles and provides directional cues through vibration patterns.
+                </p>
+                <p style="font-size: clamp(1rem, 2.5vw, 1.2rem);">
+                    The device was developed with user-centered design principles, ensuring it was intuitive and comfortable for users. It includes a wearable component and integrates with a smartphone app for additional features like voice navigation and emergency alerts.
+                </p>
+            </div>
+            <div class="project" style="margin-top: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <img src="images/侧面.png" alt="Adaptive Device for Visually Impaired" style="width: 100%; max-width: 700px; height: auto; border: 1px solid #ccc; border-radius: 10px;">
+            </div>
         </section>
     </main>
 
